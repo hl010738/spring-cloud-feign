@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestParam
 
+// configuration 指定Feign 的配置
+// 如果不指定则会默认全局配置
+// Feign 可以创建多个配置
 @FeignClient(value = "eureka-client", configuration = [FeignClientConfig::class, FeignClientInterceptorConfig::class])
 interface EurekaClientFeign {
 
