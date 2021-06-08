@@ -18,14 +18,11 @@ dependencies {
             "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:3.0.3",
             "org.springframework.boot:spring-boot-starter-actuator",
             "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
-            "org.springframework.boot:spring-boot-starter-undertow",
             "org.springframework.cloud:spring-cloud-starter-openfeign:3.0.3",
             "com.fasterxml.jackson.module:jackson-module-kotlin"
+
     )
 
-    configurations {
-        all*.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
-    }
 }
 
 
