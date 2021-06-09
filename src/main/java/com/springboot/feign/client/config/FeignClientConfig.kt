@@ -1,5 +1,6 @@
 package com.springboot.feign.client.config
 
+import brave.sampler.Sampler
 import feign.Logger
 import feign.Retryer
 import org.springframework.context.annotation.Bean
@@ -19,4 +20,9 @@ class FeignClientConfig {
         return Logger.Level.FULL
     }
 
+    // 配置Sleuth采样器
+//    @Bean
+//    fun sleuthSampler(): Sampler {
+//        return Sampler.ALWAYS_SAMPLE
+//    }
 }
